@@ -1,3 +1,3 @@
 ```bash
-kubectl create namespace <>
+kubectl create namespace introduction
 ```
