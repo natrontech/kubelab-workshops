@@ -1,15 +1,16 @@
 #!/bin/bash
 
-# Check if the pod exists with the specified name and image
+pod_name="wordpress"
+namespace="shop"
+label_selector="security=404"
 
-# TODO: fix is successful the no pod exists
-kubectl get pod -n shop --selector=security=404 --field-selector=metadata.name=wordpress
+# Use kubectl to check if the pod exists with the specified label
+pod_count=$(kubectl get pods -n $namespace --selector=$label_selector -o json | jq '.items | length')
 
-if [ $? -eq 0 ]; then
+if [ "$pod_count" -gt 0 ]; then
     echo "Pod exists with the specified label."
     exit 0
 else
     echo "Pod does not exist with the specified label."
     exit 1
 fi
-
