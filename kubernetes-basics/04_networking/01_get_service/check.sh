@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Check if clusterinfo.txt exists
 if [ ! -f ~/services.txt ]; then
   echo "services.txt does not exist"

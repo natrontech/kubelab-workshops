@@ -1,0 +1,1 @@
+**hint**: You can use the `kubectl rollout` command to revert the deployment. You can find the documentation [here](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#checking-rollout-history-of-a-deployment).
