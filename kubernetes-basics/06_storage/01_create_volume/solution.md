@@ -7,13 +7,13 @@ Add the following to the spec section of the logger.yaml file
 spec:
   containers:
     volumeMounts: 
-      - mountPath: /data/access.log
-        name: logger-volume
+    - mountPath: /data/access.log
+      name: logger-volume
 ...
   volumes:
-    - name: logger-volume
-      hostPath:
-        path: /var/log/syslog
+  - name: logger-volume
+    hostPath:
+      path: /var/log/syslog
     ...
 ```
 
