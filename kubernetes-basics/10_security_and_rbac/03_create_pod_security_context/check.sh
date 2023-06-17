@@ -9,7 +9,6 @@ image_name=`kubectl get pod lion -n $namespace -o jsonpath='{.spec.containers[0]
 uid=`kubectl get pod lion -n $namespace -o jsonpath='{.spec.containers[0].securityContext.runAsUser}'`
 uid2=`kubectl get pod lion -n $namespace -o jsonpath='{.spec.securityContext.runAsUser}'`
 
-echo $pod_name
 
 if [ "$pod_name" != "lion" ]; then
     echo "Pod has the wrong name."
@@ -20,9 +19,6 @@ if [ "$image_name" != "nginx" ]; then
     echo "Pod has the wrong image."
     exit 1
 fi
-
-echo $uid
-echo $uid2
 
 if [[ "$uid" != "1000" && "$uid2" != "1000" ]]; then
     echo "Wrong UID."
