@@ -3,27 +3,30 @@ Add the following to a a yaml file
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: appdata
-  namespace: world
+  name: web
+  namespace: web-services
   labels:
-    app: httpd
+    app: nginx
 spec:
-  strategy: 
-    type: Recreate
   replicas: 2
   selector:
     matchLabels:
-      app: httpd
+      app: nginx
   template:
     metadata:
       labels:
-        app: httpd
+        app: nginx
     spec:
       containers:
       - name: web
-        image: httpd
+        image: nginx
         ports:
         - containerPort: 80
+        readinessProbe:
+          tcpSocket:
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 10
 ```
 
 ```bash
