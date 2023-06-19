@@ -3,14 +3,15 @@
 # Check if the pod exists with the specified name and image
 
 namespace="database"
+netpolname="db-access"
 
-np_name=`kubectl get networkpolicy db-access -n $namespace -o jsonpath='{.metadata.name}'`
-np_select=`kubectl get networkpolicy db-access -n $namespace -o jsonpath='{.spec.podSelector.matchLabels}'`
-np_tcp_ports=`kubectl get networkpolicy db-access -n $namespace -o jsonpath='{.spec.ingress[0].ports[0].port}'`
-np_from=`kubectl get networkpolicy db-access -n $namespace -o jsonpath='{.spec.ingress[0].from[0].podSelector.matchLabels}'`
-np_policy_types=`kubectl get networkpolicy db-access -n $namespace -o jsonpath='{.spec.policyTypes}'`
+np_name=`kubectl get networkpolicy $netpolname -n $namespace -o jsonpath='{.metadata.name}'`
+np_select=`kubectl get networkpolicy $netpolname -n $namespace -o jsonpath='{.spec.podSelector.matchLabels}'`
+np_tcp_ports=`kubectl get networkpolicy $netpolname -n $namespace -o jsonpath='{.spec.ingress[0].ports[0].port}'`
+np_from=`kubectl get networkpolicy $netpolname -n $namespace -o jsonpath='{.spec.ingress[0].from[0].podSelector.matchLabels}'`
+np_policy_types=`kubectl get networkpolicy $netpolname -n $namespace -o jsonpath='{.spec.policyTypes}'`
 
-if [ "$np_name" != "db-access" ]; then
+if [ "$np_name" != "$netpolname" ]; then
     echo "Network policy has the wrong name."
     exit 1
 fi
