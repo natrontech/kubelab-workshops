@@ -1,0 +1,1 @@
+**hint**: To get the manifest of a specific helm revision, use the following command: `helm get manifest --revision <number> <release-name>`
