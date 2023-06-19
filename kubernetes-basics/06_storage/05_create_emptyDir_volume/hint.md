@@ -1,4 +1,4 @@
-**hint**: Create a volume of type `emptyDir`:
+Create a volume of type `emptyDir`:
 
 ```yaml
 volumes:

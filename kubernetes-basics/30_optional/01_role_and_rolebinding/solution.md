@@ -13,7 +13,7 @@ kubectl create role pod-role -n team-a --verb=get,list,create,update,delete --re
 Create the role binding:
 
 ```bash
-kubectl create rolebinding pod-role-binding -n team-a --role=pod-role --serviceaccount=default:pod-reader
+kubectl create rolebinding pod-role-binding -n team-a --role=pod-role --serviceaccount=team-a:pod-reader
 ```
 
 Check if the service account has the correct permissions:
