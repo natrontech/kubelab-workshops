@@ -1,4 +1,9 @@
 # Deploy and scale
 
-Take your first steps with Kubernetes.
-In this section you will learn how to interact with your Kubernetes cluster and create your first pods.
+Add reliability to your application by creating multiple instances of your pod and adding a service to load balance between them.
+
+
+# You will learn how to
+Create a deployment using a yaml file
+
+Scale a deployment
