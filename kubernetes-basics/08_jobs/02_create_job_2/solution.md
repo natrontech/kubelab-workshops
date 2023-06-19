@@ -3,14 +3,16 @@ Add the following to a a yaml file
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: update-servers
-  namespace: updates
+  name: update-web
+  namespace: updates-dev
 spec:
   template:
     spec:
       containers:
-      - name: update-servers
-        image: stakater/exit-container
+      - name: update-web
+        image: busybox
+        command: ["/bin/sh"]
+        args: ["-c", "echo HELLO"]
       restartPolicy: OnFailure
 ```
 

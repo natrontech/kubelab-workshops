@@ -4,20 +4,14 @@
 
 image=`kubectl get jobs update-servers -n updates -o jsonpath="{.spec.template.spec.containers[0].image}"`
 completions=`kubectl get jobs update-servers -n updates -o jsonpath="{.spec.completions}"`
-command=`kubectl get jobs update-servers -n updates -o jsonpath="{.spec.template.spec.containers[0].command[0]}"`
 
 if [ "$completions" != 1 ]; then
     echo "Job doesnt have the specified number of completions."
     exit 1
 fi
 
-if [ "$image" != "busybox" ]; then
+if [ "$image" != "stakater/exit-container" ]; then
     echo "Job does not exist with the specified image."
-    exit 1
-fi
-
-if [ -z "$command" ]; then
-    echo "Job doesnt have a command."
     exit 1
 fi
 
