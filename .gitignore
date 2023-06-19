@@ -40,3 +40,6 @@ config.ign.merged
 credentials.yml
 
 .DS_Store
+
+# temp yaml files
+temp.yaml
