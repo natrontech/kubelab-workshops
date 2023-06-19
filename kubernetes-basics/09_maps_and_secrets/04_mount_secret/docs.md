@@ -1,0 +1,3 @@
+# Mount a Secret
+
+**Task:** There is a Secret called `web-server-secrets` in the `purple` namespace. Mount it as a volume to `/secret` in a pod called `simple-pod` in the `purple` namespace. Name the volume `web-server-secret-volume`.
