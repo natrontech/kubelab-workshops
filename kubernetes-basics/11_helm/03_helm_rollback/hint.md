@@ -1,2 +1,2 @@
-**hint**: Use the command `helm rollback` to rollback a release to a previous revision.
+Use the command `helm rollback` to rollback a release to a previous revision.
 You only see *deployed* or *failed* releases with the command `helm ls`. To see a pending release, use the command `helm ls -a`.

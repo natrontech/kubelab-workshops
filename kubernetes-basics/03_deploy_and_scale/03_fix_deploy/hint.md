@@ -1,1 +1,1 @@
-**hint**: The deployment seems paused. You can use the `kubectl rollout resume` command to resume a deployment. You can find the documentation [here](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#pausing-and-resuming-a-deployment).
+The deployment seems paused. You can use the `kubectl rollout resume` command to resume a deployment. You can find the documentation [here](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#pausing-and-resuming-a-deployment).

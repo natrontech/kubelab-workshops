@@ -1,4 +1,4 @@
-**hint**: You can find the documentation about init containers [here](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/). **Important:** You cannot add an init container to an existing pod, so you will have to edit the deployment manifest and apply it again.
+You can find the documentation about init containers [here](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/). **Important:** You cannot add an init container to an existing pod, so you will have to edit the deployment manifest and apply it again.
 
 ```yaml
 (...)

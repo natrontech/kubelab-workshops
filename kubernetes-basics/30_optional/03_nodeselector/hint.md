@@ -1,1 +1,1 @@
-**hint**: Use `nodeSelector` (see [documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodeselector))
+Use `nodeSelector` (see [documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodeselector))

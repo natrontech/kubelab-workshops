@@ -1,4 +1,4 @@
-**hint**:  You can create a yaml file and apply it using `kubectl apply -f <file>.yaml`.
+You can create a yaml file and apply it using `kubectl apply -f <file>.yaml`.
 A good command to use is `echo "HELLO"` like so:
 ```yaml
 (...)

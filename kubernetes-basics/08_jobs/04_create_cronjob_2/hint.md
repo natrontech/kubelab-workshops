@@ -1,5 +1,3 @@
-**hint**:
-
 Schedules for cronjobs are defined using the cron syntax:
 ```bash
 # ┌───────────── minute (0 - 59)

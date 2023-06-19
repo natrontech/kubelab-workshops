@@ -1,4 +1,4 @@
-**hint**: `volumeClaimTemplates` can only be used for StatefulSets and add a pvc to each pod of the StatefulSet. The pvc is automatically created when the StatefulSet is created. Add the following snippet to the StatefulSet:
+`volumeClaimTemplates` can only be used for StatefulSets and add a pvc to each pod of the StatefulSet. The pvc is automatically created when the StatefulSet is created. Add the following snippet to the StatefulSet:
 
 ```yaml
 apiVersion: apps/v1
