@@ -3,7 +3,6 @@
 Get to know more complex deployment scenarios.
 
 
-# You will learn how to
-Choose an update strategy
-
-DaemonSets and StatefulSets
+## You will learn how to
+- Choose an update strategy
+- Manage DaemonSets and StatefulSets
