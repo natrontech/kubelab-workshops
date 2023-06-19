@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Check if the amount of kubernetes nodes is equal to the number in clusterinfo.txt
+# Check if the number of pods with label "important=true" is equal to the number in important_pods.txt
 # If it is, exitcode 0, else exitcode 1
 
 count=$(kubectl get pods -n chaos --selector=important=true --no-headers | wc -l)
