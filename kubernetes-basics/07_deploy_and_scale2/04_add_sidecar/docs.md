@@ -1,4 +1,4 @@
-# Add Init Container to existing Pod
+# Add Sidecar Container to existing Pod
 
 **Task:** In the `counting-service` namepsace is already a pod `counter` with a main container and a sidecar. Inspect the pod and find out what the sidecar does. Then add another sidecar to the pod with the following specs:
 
