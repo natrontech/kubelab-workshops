@@ -1,7 +1,7 @@
 #!/bin/bash
 
 namespace="purple"
-cmname="web-server-secret"
+cmname="web-server-secrets"
 podname="simple-pod"
 
 mountpath=$(kubectl get pod $podname -n $namespace -o jsonpath='{range .spec.containers[0].volumeMounts[?(@.name=="web-server-secret-volume")]}{.mountPath}{"\n"}{end}')

@@ -38,3 +38,7 @@ spec:
             sleep 2
           done
 ```
+
+```bash
+kubectl apply -f <file>.yaml
+```
