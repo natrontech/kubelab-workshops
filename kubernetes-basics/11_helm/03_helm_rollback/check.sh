@@ -1,6 +1,6 @@
 #!/bin/bash
 
-helm_status=`helm ls dokuwiki -o json | jq -r '.[0].status'`
+helm_status=`helm ls -n dokuwiki -o json | jq -r '.[0].status'`
 
 # check if helm release is deployed
 if [ "$helm_status" == "deployed" ]; then

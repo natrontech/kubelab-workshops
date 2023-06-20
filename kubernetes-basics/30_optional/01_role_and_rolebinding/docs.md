@@ -1,6 +1,6 @@
 # Create a Role and RoleBinding
 
-**Task:** Deploy all following manifests to the nameaspace `team-a`. Create a `ServiceAccount` with name `pod-reader`. Then create a `Role` with the name `pod-role` and the following rules:
+**Task:** Deploy all following objects to the nameaspace `team-a`. Create a `ServiceAccount` with name `pod-reader`. Then create a `Role` with the name `pod-role` and the following rules:
 
 ```yaml
 rules:

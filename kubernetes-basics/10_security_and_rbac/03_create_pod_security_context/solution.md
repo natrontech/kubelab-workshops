@@ -1,3 +1,6 @@
+The container image provides the uid 101.
+Apply the following manifest to create the pod:
+
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -6,8 +9,8 @@ metadata:
   namespace: zoo
 spec:
   securityContext:
-    runAsUser: 1000
+    runAsUser: 101
   containers:
   - name: lion
-    image: nginx
+    image: nginxinc/nginx-unprivileged
 ```
