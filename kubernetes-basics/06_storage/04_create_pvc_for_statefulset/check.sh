@@ -2,7 +2,7 @@
 
 accessMode=`kubectl get sts webservice -n stateful-app -o jsonpath='{.spec.volumeClaimTemplates[0].spec.accessModes[0]}'`
 storage=`kubectl get sts webservice -n stateful-app -o jsonpath='{.spec.volumeClaimTemplates[0].spec.resources.requests.storage}'`
-phase=`kubectl get sts webservice -n stateful-app -o jsonpath='{.spec.volumeClaimTemplates[0].status.phase}'`
+phase=`kubectl get pvc -n stateful-app data-webservice-0 -o jsonpath='{.status.phase}'`
 mountPath=`kubectl get sts webservice -n stateful-app -o jsonpath='{.spec.template.spec.containers[0].volumeMounts[0].mountPath}'`
 
 if [ "$accessMode" != "ReadWriteOnce" ]; then

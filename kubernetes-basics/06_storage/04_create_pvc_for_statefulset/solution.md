@@ -1,5 +1,5 @@
 Apply the following manifest:
-**Important:** `volumeClaimTemplates` can not be updated to an existing Statefulset. Delete the statefulset and apply the manifest again (or use `--force` in the kubectl command).
+**Important:** `volumeClaimTemplates` can not be updated to an existing Statefulset. Delete the statefulset and apply the manifest again.
 
 ```yaml
 apiVersion: apps/v1
@@ -33,4 +33,9 @@ spec:
       resources:
         requests:
           storage: 10Gi
+```
+
+```bash
+kubectl delete sts -n stateful-app webservice
+kubectl apply -f <file>.yaml
 ```
