@@ -6,6 +6,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: webservice
+  namespace: stateful-app
 spec:
   replicas: 1
   selector:
