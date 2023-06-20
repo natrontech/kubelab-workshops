@@ -36,6 +36,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: postgres
+  namespace: myapp
 spec:
   selector:
     app: postgres

@@ -15,12 +15,12 @@ if [ "$pod_name" != "lion" ]; then
     exit 1
 fi
 
-if [ "$image_name" != "nginx" ]; then
+if [ "$image_name" != "nginxinc/nginx-unprivileged" ]; then
     echo "Pod has the wrong image."
     exit 1
 fi
 
-if [[ "$uid" != "1000" && "$uid2" != "1000" ]]; then
+if [[ "$uid" != "101" && "$uid2" != "101" ]]; then
     echo "Wrong UID."
     exit 1
 fi

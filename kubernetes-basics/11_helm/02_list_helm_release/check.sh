@@ -1,6 +1,6 @@
 #!/bin/bash
 
-helm_values=`helm ls --no-headers -o json | jq -r '.[0].name + "," + .[0].namespace + "," + .[0].revision + "," + .[0].chart + "," + .[0].app_version'`
+helm_values=`helm ls --no-headers -n podinfo  -o json | jq -r '.[0].name + "," + .[0].namespace + "," + .[0].revision + "," + .[0].chart + "," + .[0].app_version'`
 
 # check if file helm_release.txt exists
 if [ ! -f ~/helm_release.txt ]; then

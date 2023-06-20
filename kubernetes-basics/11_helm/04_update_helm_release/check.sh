@@ -1,8 +1,8 @@
 #!/bin/bash
 
-helm_status=`helm ls my-blog -o json | jq -r '.[0].status'`
-image=`kubectl get deploy my-blog-wordpress -o jsonpath='{.spec.template.spec.containers[0].image}' | cut -d":" -f2`
-replicas=`kubectl get deploy my-blog-wordpress -o jsonpath='{.spec.replicas}'`
+helm_status=`helm ls -n blog -o json | jq -r '.[0].status'`
+image=`kubectl get deploy -n blog my-blog-wordpress -o jsonpath='{.spec.template.spec.containers[0].image}' | cut -d":" -f2`
+replicas=`kubectl get deploy -n blog my-blog-wordpress -o jsonpath='{.spec.replicas}'`
 
 # check if helm release is deployed
 if [ "$helm_status" == "deployed" ]; then

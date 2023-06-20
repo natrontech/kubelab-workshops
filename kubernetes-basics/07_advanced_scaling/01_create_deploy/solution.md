@@ -1,4 +1,4 @@
-Add the following to a a yaml file
+Add the following to a a yaml file:
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
