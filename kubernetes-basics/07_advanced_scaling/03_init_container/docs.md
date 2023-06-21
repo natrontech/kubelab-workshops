@@ -1,6 +1,6 @@
-# Add Init Container to existing Pod
+# Add Init Container to existing Deployment
 
-**Task:** In the `myapp` namepsace is a postgres and a nginx pod. Add an init container to the *nginx* pod.
+**Task:** In the `myapp` namepsace is a postgres and a nginx pod. Add an init container in the *myapp* deployment.
 Use following infos for the init container:
 
 ```yaml
