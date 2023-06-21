@@ -5,7 +5,7 @@
 image=`kubectl get deploy -n myapp myapp -o jsonpath="{.spec.template.spec.initContainers[0].image}"`
 name=`kubectl get deploy -n myapp myapp -o jsonpath="{.spec.template.spec.initContainers[0].name}"`
 command=`kubectl get deploy -n myapp myapp -o jsonpath="{.spec.template.spec.initContainers[0].command}"`
-running=`kubectl get pod -n myapp -o jsonpath="{.items[0].status.containerStatuses[0].ready}"`
+running=`kubectl get pod -n myapp -o jsonpath="{.items[?(@.metadata.labels.app=='myapp')].status.initContainerStatuses[0].ready}"`
 
 # check image
 if [ "$image" == "postgres:latest" ]; then
@@ -31,11 +31,11 @@ else
     exit 1
 fi
 
-# check if pod is running
+# check if initContainer is ready
 if [ "$running" == "true" ]; then
-    echo "Pod is running."
+    echo "initContainer is ready."
     exit 0
 else
-    echo "Pod is not running."
+    echo "initContainer is not ready."
     exit 1
 fi
