@@ -15,5 +15,5 @@ spec:
   volumes:
   - name: web-server-secret-volume
     secret:
-      secretName: web-server-secret
+      secretName: web-server-secrets
 ```
