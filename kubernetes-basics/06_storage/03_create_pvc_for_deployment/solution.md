@@ -1,4 +1,4 @@
-Apply follwoing manifest to create a PVC and a pod that uses it:
+Apply following manifest to create a PVC and a pod that uses it:
 
 ```yaml
 apiVersion: v1

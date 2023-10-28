@@ -1,4 +1,4 @@
-Apply the following manifest wich updates the deployment and adds an init container to it:
+Apply the following manifest which updates the deployment and adds an init container to it:
 
 ```yaml
 apiVersion: apps/v1

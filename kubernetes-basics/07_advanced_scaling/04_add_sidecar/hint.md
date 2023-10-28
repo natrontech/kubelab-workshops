@@ -1,2 +1,2 @@
-Add a third container to the pod, have a look at the actual pod manifest with `kubectl get pod -n counting-service counter -o yaml` and add another container according the given informations.
+Add a third container to the pod, have a look at the actual pod manifest with `kubectl get pod -n counting-service counter -o yaml` and add another container according the given information.
 **Important:** You cannot add an additional container to an existing pod, so you will have to edit the pod manifest and apply it again.

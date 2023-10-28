@@ -13,7 +13,7 @@ if [ "$mountpath" != "/data" ]; then
 fi
 
 if [ "$volumenamecm" != "$cmname" ]; then
-    echo "Wront ConfigMap mounted"
+    echo "Wrong ConfigMap mounted"
     exit 1
 fi
 
