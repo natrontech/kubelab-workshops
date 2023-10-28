@@ -11,9 +11,9 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx
+  ingressClassName: nginx-external
   rules:
-    - host: demo.swisscom.k8s.natron.cloud
+    - host: kubelab.ch
       http:
         paths:
           - path: "/04/03/$random"
