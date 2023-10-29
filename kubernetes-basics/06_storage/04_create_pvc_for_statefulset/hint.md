@@ -12,7 +12,7 @@ spec:
       name: data
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "hcloud-volumes"
+      storageClassName: "nfs-data"
       resources:
         requests:
           storage: 10Gi

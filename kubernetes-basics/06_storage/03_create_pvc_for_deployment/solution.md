@@ -7,7 +7,7 @@ metadata:
   name: data
   namespace: storage-app
 spec:
-  storageClassName: hcloud-volumes
+  storageClassName: nfs-data
   accessModes:
   - ReadWriteOnce
   resources:

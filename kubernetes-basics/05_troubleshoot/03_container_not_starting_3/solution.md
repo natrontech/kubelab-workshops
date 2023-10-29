@@ -1,9 +1,5 @@
-The resource limit does not align with the LimitRange quota for this namespace. The pod is not starting because it should have a memory limit between 560Mi and 570Mi. Delete the LimitRange and create the pod.
-
-
-```bash
-kubectl delete pod -n test2 mapper
-```
+The resource limit does not align with the LimitRange quota for this namespace.
+Edit the resource limit to be within the quota and set the limit to 400Mi.
 
 ```yaml
 apiVersion: v1
