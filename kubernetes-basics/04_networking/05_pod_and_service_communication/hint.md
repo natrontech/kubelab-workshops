@@ -1,0 +1,1 @@
+For pod communication, the `wget` command along with the service's ClusterIP can be used to fetch the number. You can find the documentation [here](https://kubernetes.io/docs/concepts/services-networking/connect-applications-service/).
