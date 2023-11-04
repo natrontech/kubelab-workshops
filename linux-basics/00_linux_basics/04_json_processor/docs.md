@@ -1,7 +1,5 @@
 # jq Basics
 
-## Introduction
-
 `jq` is a lightweight and flexible command-line JSON processor. It is great for parsing, filtering, and transforming structured data with ease.
 
 ## Task

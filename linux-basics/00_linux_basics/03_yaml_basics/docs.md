@@ -1,7 +1,5 @@
 # YAML Basics
 
-## Introduction
-
 YAML stands for "YAML Ain't Markup Language" (a recursive acronym). It's a human-readable data serialization format. In this exercise, you'll practice some basic operations with YAML.
 
 ## Task

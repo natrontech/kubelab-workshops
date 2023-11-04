@@ -1,7 +1,5 @@
 # Editing Files with nano/vim
 
-## Introduction
-
 In this exercise, you'll get hands-on experience with two popular Linux text editors: nano and vim. Both editors are commonly used in Linux environments, and it's useful to be familiar with at least one of them.
 
 ## Task

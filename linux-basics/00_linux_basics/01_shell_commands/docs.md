@@ -1,7 +1,5 @@
 # Linux Basics: Shell Commands
 
-## Introduction
-
 This exercise is designed to familiarize you with some of the most common Linux shell commands. By the end of this exercise, you will be able to list, copy, move, and delete files, as well as display file contents and navigate directories.
 
 ## Tasks

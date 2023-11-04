@@ -1,7 +1,5 @@
 # grep Basics
 
-## Introduction
-
 `grep` is a command-line utility used to search text or files for lines that contain a match to the supplied words/strings.
 
 ## Task
