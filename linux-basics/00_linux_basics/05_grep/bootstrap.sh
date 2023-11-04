@@ -2,6 +2,7 @@
 
 # Set up the environment for the grep basics exercise
 cd ~
+rm -rf grep-basics
 mkdir grep-basics
 cd grep-basics
 echo 'Hello World!

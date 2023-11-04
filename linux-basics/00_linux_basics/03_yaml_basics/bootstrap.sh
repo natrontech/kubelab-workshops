@@ -2,6 +2,7 @@
 
 # Set up the environment for the YAML basics exercise
 cd ~
+rm -rf yaml-basics
 mkdir yaml-basics
 cd yaml-basics
 echo "name: John Doe

@@ -9,4 +9,5 @@ if grep -q "is_student: true" sample.yaml && grep -q "coding" sample.yaml && gre
     echo "Task completed successfully!"
 else
     echo "The task is not completed correctly. Please review the exercise instructions and try again."
+    exit 1
 fi

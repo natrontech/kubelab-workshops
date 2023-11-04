@@ -9,4 +9,5 @@ if jq -e '.hobbies[] | select(.=="dancing")' sample.json >/dev/null && jq -e '.a
     echo "Task completed successfully!"
 else
     echo "The task is not completed correctly. Please review the exercise instructions and try again."
+    exit 1
 fi

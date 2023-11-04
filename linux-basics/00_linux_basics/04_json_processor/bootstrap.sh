@@ -2,6 +2,7 @@
 
 # Set up the environment for the jq basics exercise
 cd ~
+rm -rf jq-basics
 mkdir jq-basics
 cd jq-basics
 echo '{

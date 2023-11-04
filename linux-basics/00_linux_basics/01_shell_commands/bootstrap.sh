@@ -2,6 +2,7 @@
 
 # Set up the environment for the Linux Basics exercise
 cd ~
+rm -rf linux-basics
 mkdir linux-basics
 cd linux-basics
 echo "Hello, World!" > hello.txt

@@ -9,4 +9,5 @@ if grep -q "Successfully edited with nano" editme.txt || grep -q "Successfully e
     echo "Task completed successfully!"
 else
     echo "The task is not completed correctly. Please review the exercise instructions and try again."
+    exit 1
 fi
