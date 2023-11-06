@@ -11,5 +11,3 @@ This exercise is designed to familiarize you with some of the most common Linux 
 5. **Deleting Files:** Delete the file `empty.txt`.
 6. **Viewing Directories:** Check your current directory path.
 7. **Changing Directories:** Navigate to the parent directory of `linux-basics`.
-
-Once you've completed the tasks, run the `check.sh` script to verify your work.

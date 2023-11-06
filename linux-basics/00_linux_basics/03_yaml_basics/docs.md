@@ -10,4 +10,3 @@ YAML stands for "YAML Ain't Markup Language" (a recursive acronym). It's a human
 4. Add `dancing` to the list of hobbies.
 5. Update the `zip` code under `address` to `67890`.
 6. Save the file and exit the editor.
-7. Once you've completed the task, run the `check.sh` script to verify your work.
