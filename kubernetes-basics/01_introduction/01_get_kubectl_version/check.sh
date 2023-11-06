@@ -6,13 +6,13 @@
 client_version=$(kubectl version | awk '/Client Version: / { print $NF }')
 
 # Check if kubectl_client_version.txt exists
-if [ ! -f ~/kubectl_client_version.txt ]; then
+if [ ! -f ~/exercise/kubectl_client_version.txt ]; then
   echo "kubectl_client_version.txt does not exist"
   exit 1
 fi
 
 # Check submitted version
-submitted=$(cat ~/kubectl_client_version.txt)
+submitted=$(cat ~/exercise/kubectl_client_version.txt)
 
 if [ $client_version == $submitted ]; then
   echo "Client has $client_version version, submitted was $submitted"

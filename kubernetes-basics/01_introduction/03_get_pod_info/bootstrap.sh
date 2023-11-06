@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # delete the pod_image.txt file if it exists
-rm -f ~/pod_name.txt
+rm -f ~/exercise/pod_name.txt
 echo "File pod_name.txt deleted"
 
 # Setup cluster

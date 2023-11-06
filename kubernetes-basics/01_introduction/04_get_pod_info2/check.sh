@@ -6,12 +6,12 @@
 podimage="redis"
 
 # Check if pod_image.txt exists
-if [ ! -f ~/pod_image.txt ]; then
+if [ ! -f ~/exercise/pod_image.txt ]; then
   echo "pod_image.txt does not exist"
   exit 1
 fi
 
-submitted=$(cat ~/pod_image.txt)
+submitted=$(cat ~/exercise/pod_image.txt)
 
 if [ $podimage == $submitted ]; then
   echo "Pod is $podimage , submitted was $submitted"

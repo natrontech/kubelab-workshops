@@ -6,12 +6,12 @@
 podname="prod-web-1"
 
 # Check if clusterinfo.txt exists
-if [ ! -f ~/pod_name.txt ]; then
+if [ ! -f ~/exercise/pod_name.txt ]; then
   echo "pod_name.txt does not exist"
   exit 1
 fi
 
-submitted=$(cat ~/pod_name.txt)
+submitted=$(cat ~/exercise/pod_name.txt)
 
 if [ $podname == $submitted ]; then
   echo "Pod is $podname , submitted was $submitted"

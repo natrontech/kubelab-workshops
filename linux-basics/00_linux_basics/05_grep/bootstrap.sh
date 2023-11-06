@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set up the environment for the grep basics exercise
-cd ~
+cd ~/exercise/
 rm -rf grep-basics
 mkdir grep-basics
 cd grep-basics

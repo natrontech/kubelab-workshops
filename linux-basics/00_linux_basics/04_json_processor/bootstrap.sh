@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set up the environment for the jq basics exercise
-cd ~
+cd ~/exercise/
 rm -rf jq-basics
 mkdir jq-basics
 cd jq-basics

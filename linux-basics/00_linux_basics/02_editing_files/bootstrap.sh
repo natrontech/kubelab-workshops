@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set up the environment for the file editing exercise
-cd ~
+cd ~/exercise/
 rm -rf file-editing
 mkdir file-editing
 cd file-editing

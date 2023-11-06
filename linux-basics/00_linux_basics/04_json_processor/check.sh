@@ -2,7 +2,7 @@
 
 # Script to check if the user completed the task correctly
 
-cd ~/jq-basics
+cd ~/exercise/jq-basics
 
 # Check the content of the file
 if jq -e '.hobbies[] | select(.=="dancing")' sample.json >/dev/null && jq -e '.address.zip=="67890"' sample.json >/dev/null; then

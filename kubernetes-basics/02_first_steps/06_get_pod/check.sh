@@ -6,12 +6,12 @@
 count=$(kubectl get pods -n chaos --selector=important=true --no-headers | wc -l)
 
 # Check if clusterinfo.txt exists
-if [ ! -f ~/important_pods.txt ]; then
+if [ ! -f ~/exercise/important_pods.txt ]; then
   echo "important_pods.txt does not exist"
   exit 1
 fi
 
-submitted=$(cat ~/important_pods.txt)
+submitted=$(cat ~/exercise/important_pods.txt)
 
 if [ $count -eq $submitted ]; then
   echo "Cluster has $count pods, submitted were $submitted"

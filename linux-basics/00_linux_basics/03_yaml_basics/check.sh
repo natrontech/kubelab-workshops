@@ -2,7 +2,7 @@
 
 # Script to check if the user completed the task correctly
 
-cd ~/yaml-basics
+cd ~/exercise/yaml-basics
 
 # Check the content of the file
 if grep -q "is_student: true" sample.yaml && grep -q "coding" sample.yaml && grep -q "zip: '67890'" sample.yaml; then

@@ -2,7 +2,7 @@
 
 # Script to check if the user completed the task correctly
 
-cd ~/file-editing
+cd ~/exercise/file-editing
 
 # Check the content of the file
 if grep -q "Successfully edited with nano" editme.txt || grep -q "Successfully edited with vim" editme.txt; then

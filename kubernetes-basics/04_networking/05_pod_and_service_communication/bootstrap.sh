@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Delete the output.txt file if it exists
-rm -f ~/output.txt
+rm -f ~/exercise/output.txt
 echo "File output.txt deleted."
 
 # Setup cluster

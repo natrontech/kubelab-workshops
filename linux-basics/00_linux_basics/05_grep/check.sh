@@ -2,7 +2,7 @@
 
 # Script to check if the user completed the task correctly
 
-cd ~/grep-basics
+cd ~/exercise/grep-basics
 
 # Check if the user has found the correct number of lines with the word 'Hello'
 if [ $(grep -c 'Hello' sample.txt) -eq 2 ]; then

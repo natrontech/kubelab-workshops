@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set up the environment for the Linux Basics exercise
-cd ~
+cd ~/exercise/
 rm -rf linux-basics
 mkdir linux-basics
 cd linux-basics

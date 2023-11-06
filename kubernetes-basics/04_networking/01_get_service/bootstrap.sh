@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # delete the pod_image.txt file if it exists
-rm -f ~/services.txt
+rm -f ~/exercise/services.txt
 echo "File services.txt deleted"
 
 # Setup cluster

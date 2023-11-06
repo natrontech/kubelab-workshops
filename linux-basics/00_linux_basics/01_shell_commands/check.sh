@@ -2,7 +2,7 @@
 
 # Script to check if the user completed the tasks correctly
 
-cd ~/linux-basics
+cd ~/exercise/linux-basics
 
 # Check each task
 if [ -f hello.txt ] && [ -f hello_copy.txt ] && [ -f test_moved.txt ] && [ ! -f test.txt ] && [ ! -f empty.txt ]; then

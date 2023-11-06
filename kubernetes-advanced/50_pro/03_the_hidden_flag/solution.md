@@ -41,8 +41,8 @@ echo $encrypted_flag | openssl enc -aes-256-cbc -a -d -salt -pass pass:$combined
 
 ## 4. Store the Flag
 
-Finally, store the flag in the `~/flag.txt` file:
+Finally, store the flag in the `~/exercise/flag.txt` file:
 
 ```bash
-echo $encrypted_flag | openssl enc -aes-256-cbc -a -d -salt -pass pass:$combined_key > ~/flag.txt
+echo $encrypted_flag | openssl enc -aes-256-cbc -a -d -salt -pass pass:$combined_key > ~/exercise/flag.txt
 ```

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rm -f ~/crd_count.txt
+rm -f ~/exercise/crd_count.txt
 
 exit 0
