@@ -1,4 +1,4 @@
-Apply following maifest to create the pod:
+Apply following manifest to create the pod:
 
 ```yaml
 apiVersion: apps/v1
