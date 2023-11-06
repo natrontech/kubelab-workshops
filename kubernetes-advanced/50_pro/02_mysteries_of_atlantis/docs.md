@@ -2,6 +2,8 @@
 
 Legend tells of the sunken city of Atlantis, a place of unparalleled power and knowledge. Your mission is to reawaken Atlantis using the might of Kubernetes.
 
+Use the `atlantis` namespace for your journey.
+
 **Tasks:**
 1. Create the **Web Relic** (`web-app`) and ensure it serves the masses on port `80`.
 2. Unearth the **Database of Knowledge** (`db-backend`) using the `postgres:alpine` image.
