@@ -13,7 +13,7 @@ else
 fi
 
 # check volume of deployment
-if [ "$volume" == "{}" ]; then
+if [[ "$volume" == "{}" || "$volume" == '{"sizeLimit":'* ]]; then
     echo "Deployment exists with the specified volume."
 else
     echo "Deployment does not exist with the specified volume."
