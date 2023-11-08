@@ -12,7 +12,7 @@ helm history -n dokuwiki dokuwiki
 
 You should see the following error message in the revision 2: 
 
-```
+```bash
 _Deployment.apps "dokuwiki" is invalid: spec.template.spec.containers[0].resources.requests: Invalid value: "300m": must be less than or equal to cpu limit
 ```
 
